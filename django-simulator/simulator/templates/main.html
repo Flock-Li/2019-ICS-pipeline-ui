@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LRC's Y86-64simulator</title>
+    <link rel="shortcut icon" href="../static/book.jpg">
+    <link rel="stylesheet" href="../static/style.css">
+    
+
+    
+    <link rel="stylesheet" href="../static/font/iconfont.css">
+    
+    <!-- <script  src="../static/index.js" defer="true"></script> -->
+
+    
+</head>
+<body>
+    <div class="backimg">
+    </div>
+    <div class="page">
+        <div class="comcontent">
+            <div class="center">
+                {% csrf_token%}
+                <textarea class="comment"></textarea>
+                <button class="send" disabled>submit</button> 
+            </div>
+            <div class="messagelist">
+
+            </div>
+        </div>
+        <div class="myweb">
+            <span>Welcome to Y86 website</span>
+        </div>
+        <div >
+            <span class="speedcontrol fat" >speed:</span>
+            <span><input class="speed" id="range" type="range" min="0" max="30" value="0" step="1" oninput="change()" onchange="change()"></span>
+            <span class="speedvalue" id="spevalue">0</span>
+        </div>
+        <div>
+            <form class="load" action="/load/" method="post" enctype="multipart/form-data">
+                {% csrf_token%}
+                <span class="file"><input type="file" name="upload_file">select file</span>
+                <span><input  class="submitfile fat" type="submit" name="submit" value="submit"></span>
+            </form>
+        </div>
+        <div class="controlbtn">
+            <div class="control" >
+                <span><button class="start middle" type="submit" value="start" onclick="start()">start</button></span>
+                <span><button class="pause middle" type="submit" name="pause" id="pause" value="pause" onclick="pause()">pause</button></span>
+                <span><button class="step middle" type="submit" name="step" id="step" value="step" onclick="step()">step</button></span>
+                <span><button class="back middle" type="submit" name="back" id="back" value="back" onclick="back()">back</button></span>
+                <span><button class="reset middle" type="submit" name="reset" id="reset" value="reset" onclick="reset()">reset</button></span>
+            </div>
+        </div>
+        <div id="status" class="page-status">
+            <ul>
+                <li class="fat"><span>stat</span><br><em>AOK</em></li>
+                <li class="fat"><span>CPI</span><br><em>0</em></li>
+                <li class="fat"><span>ZF</span><br><em>true</em></li>
+                <li class="fat"><span>SF</span><br><em>false</em></li>
+                <li class="fat"><span>OF</span><br><em>false</em></li>
+            </ul>
+        </div>
+        <span class="text fat">Code:</span>
+        <div id="codelist" class="page-text">
+            {% if codedata == "0000000000000000"%}
+            <span id="block"><p id="codeblock" class="fat">文件输入失败，请输入.yo后缀文件</p></span>
+            {%else%} 
+                {% for item in codedata%}
+                <span id="block"><p id="codeblock" class="fat">{{ item }}</p></span>
+                {% endfor %}
+            {%endif%}
+        </div>
+        <div class="nav">
+            <ul id="tabs" class="pagination" >
+                <li id="register" class="fat"><a href="#" class="active " >Register</a></li>
+                <li id="memory" class="fat"><a href="#" class=""  >Memory</a></li>
+            </ul>
+        </div>
+        <div class="page-RM" id="list">
+            <ul id="Reg" class="Registerinfo active">
+                <!-- <script>
+                    console.log(document.getElementById('Reg'));
+                </script> -->
+                <div class="Regblock">
+                    <li id="rax" class="fat"><span class="reg">%rax</span><em>0x0000000000000000</em></li>
+                    <li id="rcx" class="fat"><span class="reg">%rcx</span><em>0x0000000000000000</em></li>
+                    <li id="rdx" class="fat"><span class="reg">%rdx</span><em>0x0000000000000000</em></li>
+                    <li id="rbx" class="fat"><span class="reg">%rbx</span><em>0x0000000000000000</em></li>
+                    <li id="rsp" class="fat"><span class="reg">%rsp</span><em>0x0000000000000000</em></li>
+                    <li id="rbp" class="fat"><span class="reg">%rbp</span><em>0x0000000000000000</em></li>
+                    <li id="rsi" class="fat"><span class="reg">%rsi</span><em>0x0000000000000000</em></li>
+                    <li id="rdi" class="fat"><span class="reg">%rdi</span><em>0x0000000000000000</em></li>
+                </div>
+                <div class="Regblock">
+                    <li id="r8" class="fat"><span class="reg">%r8</span><em>0x0000000000000000</em></li>
+                    <li id="r9" class="fat"><span class="reg">%r9</span><em>0x0000000000000000</em></li>
+                    <li id="r10" class="fat"><span class="reg">%r10</span><em>0x0000000000000000</em></li>
+                    <li id="r11" class="fat"><span class="reg">%r11</span><em>0x0000000000000000</em></li>
+                    <li id="r12" class="fat"><span class="reg">%r12</span><em>0x0000000000000000</em></li>
+                    <li id="r13" class="fat"><span class="reg">%r13</span><em>0x0000000000000000</em></li>
+                    <li id="r14" class="fat"><span class="reg">%r14</span><em>0x0000000000000000</em></li>
+                </div>          
+            </ul>
+
+            <ul id="Mem" class="Memoryinfo">
+                <div class="Memblock">
+                    <li class="fat"><span class="mem">0x0</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x8</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x10</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x18</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x20</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x28</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x30</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x38</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x40</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x48</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x50</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x58</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x60</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x68</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x70</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x78</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x80</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x88</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x90</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x98</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0xa0</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0xa8</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0xb0</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0xb8</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0xc0</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0xc8</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0xd0</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0xd8</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0xe0</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0xe8</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0xf0</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0xf8</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x100</span><em> 0x0000000000000000</em></li>        
+                </div>
+                <div class="Memblock">
+                    <li class="fat"><span class="mem">0x108</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x110</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x118</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x120</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x128</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x130</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x138</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x140</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x148</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x150</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x158</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x160</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x168</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x170</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x178</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x180</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x188</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x190</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x198</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x200</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x208</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x210</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x218</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x220</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x228</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x230</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x238</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x240</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x248</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x250</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x258</span><em> 0x0000000000000000</em></li>
+                    <li class="fat"><span class="mem">0x260</span><em> 0x0000000000000000</em></li>
+                <div>
+            </ul>
+
+        </div>
+        <div class="page-pocess">
+            
+            <ul class="info">
+                <li class="pocess-nav"><span class="poctitle fat">Writeback</span>
+                    <div id ="write" class="writeback">
+                        <ul>
+                            <li class="fat"><span>stat</span><br><em>AOK</em></li>
+                            <li class="fat"><span>icode</span><br><em>1</em></li>
+                            <li class="fat"><span>dstE</span><br><em>null</em></li>
+                            <li class="fat"><span>dstM</span><br><em>null</em></li>
+                            <div class="val">
+                                <li class="fat"><span>valE</span><br><em>0x0</em></li>
+                                <li class="fat right"><span>valM</span><br><em>0x0</em></li>
+                            </div>
+                        </ul>
+                    </div>
+                    
+                </li>
+                <li class="pocess-nav"><span class="poctitle fat">Memory</span>
+                    <div id ="mem" class="memory">
+                        <ul>
+                            <li class="fat"><span>stat</span><br><em>AOK</em></li>
+                            <li class="fat"><span>icode</span><br><em>1</em></li>
+                            <li class="fat"><span>Cnd</span><br><em>1</em></li>
+                            <li class="fat"><span>dstE</span><br><em>null</em></li>
+                            <li class="fat"><span>dstM</span><br><em>null</em></li>
+                            <div class="val">   
+                                <li class="fat"><span>valE</span><br><em>0x0</em></li>
+                                <li class="fat right"><span>valA</span><br><em>0x0</em></li>
+                            </div>
+                        </ul>
+                    </div>      
+                </li>
+                <li class="pocess-nav"><span class="poctitle fat">Execute</span>
+                    <div id="exe" class="execute">
+                        <ul>
+                            <li class="fat"><span>stat</span><br><em>AOK</em></li>
+                            <li class="fat"><span>icode</span><br><em>1</em></li>
+                            <li class="fat"><span>ifunc</span><br><em>0</em></li>
+                            <li class="fat"><span>dstE</span><br><em>null</em></li>
+                            <li class="fat"><span>dstM</span><br><em>null</em></li>
+                            <li class="fat"><span>srcA</span><br><em>null</em></li>
+                            <li class="fat"><span>srcB</span><br><em>null</em></li>
+                            <div class="val">
+                                <li class="fat "><span>valC</span><br><em>0x0</em></li>
+                                <li class="fat right"><span>valB</span><br><em>0x0</em></li>
+                            </div>
+                        </ul>
+                    </div>
+                    
+                </li>
+                <li class="pocess-nav"><span class="poctitle fat">Decode</span>
+                    <div id="dec" class="decode">
+                        <ul>
+                            <li class="fat"><span>stat</span><br><em>AOK</em></li>
+                            <li class="fat"><span>icode</span><br><em>1</em></li>
+                            <li class="fat"><span>ifun</span><br><em>0</em></li>
+                            <li class="fat"><span>rA</span><br><em>null</em></li>
+                            <li class="fat"><span>rB</span><br><em>null</em></li>
+                            <div class="val">
+                                <li class="fat"><span>valC</span><br><em>0x0</em></li>
+                                <li class="fat right"><span>valP</span><br><em>0x0</em></li>
+                            </div>
+                            
+                        </ul>
+                    </div>
+                    
+                </li>
+                <li class="pocess-nav"><span class="poctitle fat">Fetch</span>
+                    <div id="fet" class="fetch">
+                        <ul>
+                            <li class="fat"><span>FrePC</span><br><em>0x0</em></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+<script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script  src="../static/logic.js" defer="true"></script>
+<script  src="../static/index.js" defer="true"></script>
+</html>

@@ -1,0 +1,58 @@
+{
+  "id": "1547322",
+  "name": "小米",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "265119",
+      "name": "踩",
+      "font_class": "iconfontzan",
+      "unicode": "e6cb",
+      "unicode_decimal": 59083
+    },
+    {
+      "icon_id": "6539413",
+      "name": "踩",
+      "font_class": "cai",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "7549348",
+      "name": "搜索",
+      "font_class": "RectangleCopy",
+      "unicode": "e6a2",
+      "unicode_decimal": 59042
+    },
+    {
+      "icon_id": "7587956",
+      "name": "垃圾桶",
+      "font_class": "lajitong",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "8776823",
+      "name": "cart",
+      "font_class": "icon-test",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "8776871",
+      "name": "link",
+      "font_class": "icon-test1",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "9713061",
+      "name": "点赞",
+      "font_class": "dianzan",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    }
+  ]
+}

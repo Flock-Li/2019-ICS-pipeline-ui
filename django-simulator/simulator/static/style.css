@@ -1,0 +1,536 @@
+.backimg {
+    background: url(../static/backimg.jpg) no-repeat 100% 100%;
+    height: 900px;
+    width:100%;
+    padding: 0px;
+    margin: 0px;
+    background-attachment:fixed;
+    position: relative;
+    z-index: -1;
+}
+
+body{
+    position: relative;
+    height: 900px;
+    width: 1518px;
+    padding: 0px;
+    margin: 0px; 
+}
+
+.page {
+    border:1px solid black;
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    right: 50px;
+    height: 800px;
+    background-color: #515151;
+    opacity:0.5;
+}
+
+.speedcontrol{
+    display: block;
+    position: absolute;
+    top:35px;
+    right: 485px;
+    color: white;
+    font: italic 1em Georgia, serif;
+}
+.speed{
+    display: block;
+    position: absolute;
+    top:35px;
+    right: 350px;
+}
+.speedvalue{
+    display: block;
+    position: absolute;
+    top:22px;
+    right: 300px;
+    color: white;
+    font: italic 2em Georgia, serif;
+}
+.file {
+    position: absolute;
+    top:32px;
+    right:100px;
+    width: 140px;
+    height: 20px;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    color: #1E88C7;
+    text-decoration: none;
+    line-height: 20px;
+    text-align: center;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    width:100px;
+}
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+.submitfile{
+    position: absolute;
+    top: 10px;
+    right:10px;
+    background-color: #f9fd16;
+    border: none;
+    color: black;
+    width: 70px; 
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding:1px 1px;
+}
+.submitfile:hover{
+    background-color: white;
+    color: black;
+}
+.controlbtn .control{
+    position: absolute;
+    top:120px;
+    right:20px;
+    width:50px;
+    height:400px;
+}
+.controlbtn .control span{
+    display: block;
+    height: 20%;
+}
+.start {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    width: 50px; 
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.start:hover{
+    background-color: white;
+    color: #4CAF50;
+}
+.pause {
+    background-color: #f11708;
+    border: none;
+    width: 50px; 
+    height: 50px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.pause:hover{
+    background-color: white;
+    color: #f11708;
+}
+.step {
+    background-color: #008cba;
+    border: none;
+    width: 50px; 
+    height: 50px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.step:hover{
+    background-color: white;
+    color: #008cba;
+}
+.back {
+    background-color: black;
+    border: none;
+    width: 50px; 
+    height: 50px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.back:hover{
+    background-color: white;
+    color: black;
+}
+.reset {
+    background-color: #e7e7e7;
+    border: none;
+    width: 50px; 
+    height: 50px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.reset:hover{
+    background-color: black;
+    color: #e7e7e7;
+}
+
+.page .page-text{
+    position: absolute;
+    top:75px;
+    right:100px;
+    height: 320px;
+    width: 45%;
+    background-color: white;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+.page .text{
+    display: block;
+    position: absolute;
+    top:42px;
+    right: 680px;
+    color: white;
+    font: italic 1.5em Georgia, serif;
+}
+.page .page-RM {
+    position: absolute;
+    top:150px;
+    left:2%;
+    height: 245px;
+    width: 45%;
+    background-color: white;
+    overflow: auto;
+}
+
+.pagination {
+    position: absolute;
+    top: 95px;
+    left:2%;
+    height:40px;
+    width:240px;
+    background: green;
+    padding: 0px;
+}
+.pagination li {
+    list-style-type: none;
+    display: block;
+    height: 40px;
+    width: 120px;
+    float: left;
+}
+.pagination li a {
+    color: black;
+    float: left;
+    width:100px;
+    height: 40px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+.pagination li a.active{
+    color: green;
+    background:white;
+}
+
+.page-RM ul{
+    display: none;
+}
+.page-RM ul.active{
+    display: block;
+}
+
+.page .page-pocess{
+    position: absolute;
+    top:400px;
+    left:2%;
+    height: 300px;
+    width: 50%;
+    background-color: white;
+    overflow: auto;
+}
+.info .pocess-nav{
+    display: block;
+    margin:0;
+    height: 20%;
+    padding: 0;
+    width: 850px;
+}
+.page-pocess .info{
+    display: block;
+    margin:0;
+    padding: 0;
+    height: 300px;
+    list-style-type: none;
+}
+.page-pocess .pocess-nav .poctitle{
+    display: block;
+    font-size: 16px;
+    line-height: 60px;
+    width: 92px;
+    text-align: center;
+    background-color: rgb(231, 224, 224);
+    border: 0.5px solid rgb(201, 195, 195);
+}
+.writeback {
+    height: 60px;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    width:800px;
+}
+.memory {
+    height: 60px;
+    position: absolute;
+    top: 61px;
+    left: 100px;
+    width:800px;
+}
+.execute {
+    height: 60px;
+    position: absolute;
+    top: 122px;
+    left: 100px;
+    width:800px;
+}
+.decode {
+    height: 60px;
+    position: absolute;
+    top: 183px;
+    left: 100px;
+    width:800px;
+}
+.fetch {
+    height: 60px;
+    position: absolute;
+    top: 244px;
+    left: 100px;
+    width:800px;
+}
+.writeback ul,.memory ul,.execute ul,.decode ul,.fetch ul{
+    padding-left: 0px;
+    list-style-type: none;
+    height: 100%;
+}
+.writeback li,.memory li,.execute li,.decode li,.fetch li{
+    display: block;
+    float: left;
+    color: black;
+    height:100%;
+    width: 60px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.page-status{
+    position: absolute;
+    top:90px;
+    left: 300px;
+    background-color: white;
+    height: 40px;
+    width:350px;
+    border-radius: .25rem ;
+}
+.page-status ul{
+    display: block;
+    margin:0;
+    padding: 0;
+    height: 100%;
+    list-style-type: none;
+}
+.page-status li{
+    text-align: center;
+    display: block;
+    float: left;
+    height: 100%;
+    width: 20%;
+    display: block;
+}
+
+
+.page .myweb{
+    display: block;
+    position: absolute;
+    top:15px;
+    left:20px;
+    height: 60px;
+    width:700px;
+}
+.page .myweb span{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 60px;
+    color: white;
+    font: italic 3.5em Georgia, serif;
+}
+
+#block {
+    display: block;
+    height: 25px;
+    width: 1000px;
+}
+#block.blockactive{
+    display: block;
+    box-shadow: 2px 2px 5px #bbb;
+    background: #a19898;
+    padding: 3px 5px;
+    margin: 3px -5px;
+    line-height: 1.7;
+    border-radius: 3px;
+}
+#codeblock{
+    display: block;
+    height: 35px;
+    margin: 0;
+}
+
+
+.comcontent{
+    display: block;
+    position: absolute;
+    top:400px;
+    right:100px;
+    width:540px;
+    height: 300px;
+    overflow: auto;
+    background: white;
+    margin: auto;
+}
+
+.comcontent .center{
+    float: left;
+    width: 480px;
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 5px;
+    background-color: #d7cfe2;
+}
+.comment{
+    width:400px;
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 40px;
+    float: left;
+    background-color: white;
+    resize: none;
+    outline:none;
+}
+
+.send{
+    float: right;
+    margin-right: 0px;
+    margin-top: 15px;
+    width: 47px;
+    height:45px;
+    border:none;
+    color:white;
+    background: rgb(218, 68, 68);
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.messagelist{
+    padding-top: 3px;
+    width: 480px;
+    float: left;
+    background-color: #8d7373;
+    margin-left: 30px;
+}
+.messagelist .infocom{
+    display: block;
+    width:470px;
+    height: 82px;
+    float: left;
+    border-bottom: 3px solid #ccc;
+}
+.messagelist .infocom .infoText{
+    font-size: 16px;
+    float: left;
+    height: 40px;
+    color: white;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.messagelist .infoOperation {
+    width: 100%;
+    height: 15px;
+    float: left;
+}
+.messagelist .infoOperation .infoTime{
+    float: left;
+    font-size: 15px;
+    color:white;
+}
+.messagelist .infoOperation .infoHandle{
+    float: right;
+    font-size: 15px;
+    
+}
+.messagelist .infoHandle .iconfont{
+    color:white;
+    margin-right: 4px;
+}
+.messagelist .infoHandle a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 16px;
+}
+
+.fat{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+.middle{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+.Regblock, .Memblock{
+    display: block;
+    width: 290px;
+    float: left;
+}
+.Regblock .reg, .Memblock .mem{
+    width: 55px;
+    float: left;
+    display: block;
+}
+
+.val{
+    width: 250px;
+    float: left;
+}
+.val .right{
+    float: right;
+}

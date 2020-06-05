@@ -1,0 +1,2648 @@
+{
+    "0": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0xa"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "IIRMOVQ",
+            "icode ": "3",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "%rsp",
+            "valC": "0x200",
+            "valP": "0xa"
+        },
+        "E": {
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valA": "0x0",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "1": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x38"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "ICALL",
+            "icode ": "8",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x38",
+            "valP": "0x13"
+        },
+        "E": {
+            "instr ": "IIRMOVQ",
+            "icode ": "3",
+            "ifunc ": "0",
+            "valC": "0x200",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "%rsp",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valA": "0x0",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "2": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x42"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "IIRMOVQ",
+            "icode ": "3",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "%rdi",
+            "valC": "0x18",
+            "valP": "0x42"
+        },
+        "E": {
+            "instr ": "ICALL",
+            "icode ": "8",
+            "ifunc ": "0",
+            "valC": "0x38",
+            "valA": "0x13",
+            "valB": "0x200",
+            "dstE": "%rsp",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "%rsp"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "IIRMOVQ",
+            "icode": "3",
+            "valA": "0x0",
+            "valE": "0x200",
+            "dstE": "%rsp",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "3": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x4c"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "IIRMOVQ",
+            "icode ": "3",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "%rsi",
+            "valC": "0x4",
+            "valP": "0x4c"
+        },
+        "E": {
+            "instr ": "IIRMOVQ",
+            "icode ": "3",
+            "ifunc ": "0",
+            "valC": "0x18",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "%rdi",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "ICALL",
+            "icode": "8",
+            "valA": "0x13",
+            "valE": "0x1f8",
+            "dstE": "%rsp",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "IIRMOVQ",
+            "icode": "3",
+            "valE": "0x200",
+            "valM": "0x0",
+            "dstE": "%rsp",
+            "dstM": "null"
+        }
+    },
+    "4": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x56"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "ICALL",
+            "icode ": "8",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x56",
+            "valP": "0x55"
+        },
+        "E": {
+            "instr ": "IIRMOVQ",
+            "icode ": "3",
+            "ifunc ": "0",
+            "valC": "0x4",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "%rsi",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "IIRMOVQ",
+            "icode": "3",
+            "valA": "0x0",
+            "valE": "0x18",
+            "dstE": "%rdi",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "ICALL",
+            "icode": "8",
+            "valE": "0x1f8",
+            "valM": "0x0",
+            "dstE": "%rsp",
+            "dstM": "null"
+        }
+    },
+    "5": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x60"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "IIRMOVQ",
+            "icode ": "3",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "%r8",
+            "valC": "0x8",
+            "valP": "0x60"
+        },
+        "E": {
+            "instr ": "ICALL",
+            "icode ": "8",
+            "ifunc ": "0",
+            "valC": "0x56",
+            "valA": "0x55",
+            "valB": "0x1f8",
+            "dstE": "%rsp",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "%rsp"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "IIRMOVQ",
+            "icode": "3",
+            "valA": "0x0",
+            "valE": "0x4",
+            "dstE": "%rsi",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "IIRMOVQ",
+            "icode": "3",
+            "valE": "0x18",
+            "valM": "0x0",
+            "dstE": "%rdi",
+            "dstM": "null"
+        }
+    },
+    "6": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x6a"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "IIRMOVQ",
+            "icode ": "3",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "%r9",
+            "valC": "0x1",
+            "valP": "0x6a"
+        },
+        "E": {
+            "instr ": "IIRMOVQ",
+            "icode ": "3",
+            "ifunc ": "0",
+            "valC": "0x8",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "%r8",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "ICALL",
+            "icode": "8",
+            "valA": "0x55",
+            "valE": "0x1f0",
+            "dstE": "%rsp",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "IIRMOVQ",
+            "icode": "3",
+            "valE": "0x4",
+            "valM": "0x0",
+            "dstE": "%rsi",
+            "dstM": "null"
+        }
+    },
+    "7": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x6c"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "xorq",
+            "icode ": "6",
+            "ifun ": "3",
+            "rA = ": "%rax",
+            "rB = ": "%rax",
+            "valC": "0x0",
+            "valP": "0x6c"
+        },
+        "E": {
+            "instr ": "IIRMOVQ",
+            "icode ": "3",
+            "ifunc ": "0",
+            "valC": "0x1",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "%r9",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "IIRMOVQ",
+            "icode": "3",
+            "valA": "0x0",
+            "valE": "0x8",
+            "dstE": "%r8",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "ICALL",
+            "icode": "8",
+            "valE": "0x1f0",
+            "valM": "0x0",
+            "dstE": "%rsp",
+            "dstM": "null"
+        }
+    },
+    "8": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x6e"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "andq",
+            "icode ": "6",
+            "ifun ": "2",
+            "rA = ": "%rsi",
+            "rB = ": "%rsi",
+            "valC": "0x0",
+            "valP": "0x6e"
+        },
+        "E": {
+            "instr ": "xorq",
+            "icode ": "6",
+            "ifunc ": "3",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "%rax",
+            "dstM": "null",
+            "srcA": "%rax",
+            "srcB": "%rax"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "IIRMOVQ",
+            "icode": "3",
+            "valA": "0x0",
+            "valE": "0x1",
+            "dstE": "%r9",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "IIRMOVQ",
+            "icode": "3",
+            "valE": "0x8",
+            "valM": "0x0",
+            "dstE": "%r8",
+            "dstM": "null"
+        }
+    },
+    "9": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x87"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "jmp",
+            "icode ": "7",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x87",
+            "valP": "0x77"
+        },
+        "E": {
+            "instr ": "andq",
+            "icode ": "6",
+            "ifunc ": "2",
+            "valC": "0x0",
+            "valA": "0x4",
+            "valB": "0x4",
+            "dstE": "%rsi",
+            "dstM": "null",
+            "srcA": "%rsi",
+            "srcB": "%rsi"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "xorq",
+            "icode": "6",
+            "valA": "0x0",
+            "valE": "0x0",
+            "dstE": "%rax",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "IIRMOVQ",
+            "icode": "3",
+            "valE": "0x1",
+            "valM": "0x0",
+            "dstE": "%r9",
+            "dstM": "null"
+        }
+    },
+    "10": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x77"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "jne",
+            "icode ": "7",
+            "ifun ": "4",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x77",
+            "valP": "0x90"
+        },
+        "E": {
+            "instr ": "jmp",
+            "icode ": "7",
+            "ifunc ": "0",
+            "valC": "0x87",
+            "valA": "0x77",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "andq",
+            "icode": "6",
+            "valA": "0x4",
+            "valE": "0x4",
+            "dstE": "%rsi",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "xorq",
+            "icode": "6",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "%rax",
+            "dstM": "null"
+        }
+    },
+    "11": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x81"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "IMRMOVQ",
+            "icode ": "5",
+            "ifun ": "0",
+            "rA = ": "%r10",
+            "rB = ": "%rdi",
+            "valC": "0x0",
+            "valP": "0x81"
+        },
+        "E": {
+            "instr ": "jne",
+            "icode ": "7",
+            "ifunc ": "4",
+            "valC": "0x77",
+            "valA": "0x90",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "jmp",
+            "icode": "7",
+            "valA": "0x77",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "andq",
+            "icode": "6",
+            "valE": "0x4",
+            "valM": "0x0",
+            "dstE": "%rsi",
+            "dstM": "null"
+        }
+    },
+    "12": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x83"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "addq",
+            "icode ": "6",
+            "ifun ": "0",
+            "rA = ": "%r10",
+            "rB = ": "%rax",
+            "valC": "0x0",
+            "valP": "0x83"
+        },
+        "E": {
+            "instr ": "IMRMOVQ",
+            "icode ": "5",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x18",
+            "dstE": "null",
+            "dstM": "%r10",
+            "srcA": "null",
+            "srcB": "%rdi"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "jne",
+            "icode": "7",
+            "valA": "0x90",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "jmp",
+            "icode": "7",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "13": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x83"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "addq",
+            "icode ": "6",
+            "ifun ": "0",
+            "rA = ": "%r10",
+            "rB = ": "%rax",
+            "valC": "0x0",
+            "valP": "0x83"
+        },
+        "E": {
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "IMRMOVQ",
+            "icode": "5",
+            "valA": "0x0",
+            "valE": "0x18",
+            "dstE": "null",
+            "dstM": "%r10",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "jne",
+            "icode": "7",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "14": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x85"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "addq",
+            "icode ": "6",
+            "ifun ": "0",
+            "rA = ": "%r8",
+            "rB = ": "%rdi",
+            "valC": "0x0",
+            "valP": "0x85"
+        },
+        "E": {
+            "instr ": "addq",
+            "icode ": "6",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0xd000d000d",
+            "valB": "0x0",
+            "dstE": "%rax",
+            "dstM": "null",
+            "srcA": "%r10",
+            "srcB": "%rax"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valA": "0x0",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "IMRMOVQ",
+            "icode": "5",
+            "valE": "0x18",
+            "valM": "0xd000d000d",
+            "dstE": "null",
+            "dstM": "%r10"
+        }
+    },
+    "15": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x87"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "subq",
+            "icode ": "6",
+            "ifun ": "1",
+            "rA = ": "%r9",
+            "rB = ": "%rsi",
+            "valC": "0x0",
+            "valP": "0x87"
+        },
+        "E": {
+            "instr ": "addq",
+            "icode ": "6",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x8",
+            "valB": "0x18",
+            "dstE": "%rdi",
+            "dstM": "null",
+            "srcA": "%r8",
+            "srcB": "%rdi"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "addq",
+            "icode": "6",
+            "valA": "0xd000d000d",
+            "valE": "0xd000d000d",
+            "dstE": "%rax",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "16": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x77"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "jne",
+            "icode ": "7",
+            "ifun ": "4",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x77",
+            "valP": "0x90"
+        },
+        "E": {
+            "instr ": "subq",
+            "icode ": "6",
+            "ifunc ": "1",
+            "valC": "0x0",
+            "valA": "0x1",
+            "valB": "0x4",
+            "dstE": "%rsi",
+            "dstM": "null",
+            "srcA": "%r9",
+            "srcB": "%rsi"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "addq",
+            "icode": "6",
+            "valA": "0x8",
+            "valE": "0x20",
+            "dstE": "%rdi",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "addq",
+            "icode": "6",
+            "valE": "0xd000d000d",
+            "valM": "0x0",
+            "dstE": "%rax",
+            "dstM": "null"
+        }
+    },
+    "17": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x81"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "IMRMOVQ",
+            "icode ": "5",
+            "ifun ": "0",
+            "rA = ": "%r10",
+            "rB = ": "%rdi",
+            "valC": "0x0",
+            "valP": "0x81"
+        },
+        "E": {
+            "instr ": "jne",
+            "icode ": "7",
+            "ifunc ": "4",
+            "valC": "0x77",
+            "valA": "0x90",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "subq",
+            "icode": "6",
+            "valA": "0x1",
+            "valE": "0x3",
+            "dstE": "%rsi",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "addq",
+            "icode": "6",
+            "valE": "0x20",
+            "valM": "0x0",
+            "dstE": "%rdi",
+            "dstM": "null"
+        }
+    },
+    "18": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x83"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "addq",
+            "icode ": "6",
+            "ifun ": "0",
+            "rA = ": "%r10",
+            "rB = ": "%rax",
+            "valC": "0x0",
+            "valP": "0x83"
+        },
+        "E": {
+            "instr ": "IMRMOVQ",
+            "icode ": "5",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x20",
+            "dstE": "null",
+            "dstM": "%r10",
+            "srcA": "null",
+            "srcB": "%rdi"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "jne",
+            "icode": "7",
+            "valA": "0x90",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "subq",
+            "icode": "6",
+            "valE": "0x3",
+            "valM": "0x0",
+            "dstE": "%rsi",
+            "dstM": "null"
+        }
+    },
+    "19": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x83"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "addq",
+            "icode ": "6",
+            "ifun ": "0",
+            "rA = ": "%r10",
+            "rB = ": "%rax",
+            "valC": "0x0",
+            "valP": "0x83"
+        },
+        "E": {
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "IMRMOVQ",
+            "icode": "5",
+            "valA": "0x0",
+            "valE": "0x20",
+            "dstE": "null",
+            "dstM": "%r10",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "jne",
+            "icode": "7",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "20": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x85"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "addq",
+            "icode ": "6",
+            "ifun ": "0",
+            "rA = ": "%r8",
+            "rB = ": "%rdi",
+            "valC": "0x0",
+            "valP": "0x85"
+        },
+        "E": {
+            "instr ": "addq",
+            "icode ": "6",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0xc000c000c0",
+            "valB": "0xd000d000d",
+            "dstE": "%rax",
+            "dstM": "null",
+            "srcA": "%r10",
+            "srcB": "%rax"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valA": "0x0",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "IMRMOVQ",
+            "icode": "5",
+            "valE": "0x20",
+            "valM": "0xc000c000c0",
+            "dstE": "null",
+            "dstM": "%r10"
+        }
+    },
+    "21": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x87"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "subq",
+            "icode ": "6",
+            "ifun ": "1",
+            "rA = ": "%r9",
+            "rB = ": "%rsi",
+            "valC": "0x0",
+            "valP": "0x87"
+        },
+        "E": {
+            "instr ": "addq",
+            "icode ": "6",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x8",
+            "valB": "0x20",
+            "dstE": "%rdi",
+            "dstM": "null",
+            "srcA": "%r8",
+            "srcB": "%rdi"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "addq",
+            "icode": "6",
+            "valA": "0xc000c000c0",
+            "valE": "0xcd00cd00cd",
+            "dstE": "%rax",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "22": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x77"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "jne",
+            "icode ": "7",
+            "ifun ": "4",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x77",
+            "valP": "0x90"
+        },
+        "E": {
+            "instr ": "subq",
+            "icode ": "6",
+            "ifunc ": "1",
+            "valC": "0x0",
+            "valA": "0x1",
+            "valB": "0x3",
+            "dstE": "%rsi",
+            "dstM": "null",
+            "srcA": "%r9",
+            "srcB": "%rsi"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "addq",
+            "icode": "6",
+            "valA": "0x8",
+            "valE": "0x28",
+            "dstE": "%rdi",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "addq",
+            "icode": "6",
+            "valE": "0xcd00cd00cd",
+            "valM": "0x0",
+            "dstE": "%rax",
+            "dstM": "null"
+        }
+    },
+    "23": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x81"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "IMRMOVQ",
+            "icode ": "5",
+            "ifun ": "0",
+            "rA = ": "%r10",
+            "rB = ": "%rdi",
+            "valC": "0x0",
+            "valP": "0x81"
+        },
+        "E": {
+            "instr ": "jne",
+            "icode ": "7",
+            "ifunc ": "4",
+            "valC": "0x77",
+            "valA": "0x90",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "subq",
+            "icode": "6",
+            "valA": "0x1",
+            "valE": "0x2",
+            "dstE": "%rsi",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "addq",
+            "icode": "6",
+            "valE": "0x28",
+            "valM": "0x0",
+            "dstE": "%rdi",
+            "dstM": "null"
+        }
+    },
+    "24": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x83"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "addq",
+            "icode ": "6",
+            "ifun ": "0",
+            "rA = ": "%r10",
+            "rB = ": "%rax",
+            "valC": "0x0",
+            "valP": "0x83"
+        },
+        "E": {
+            "instr ": "IMRMOVQ",
+            "icode ": "5",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x28",
+            "dstE": "null",
+            "dstM": "%r10",
+            "srcA": "null",
+            "srcB": "%rdi"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "jne",
+            "icode": "7",
+            "valA": "0x90",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "subq",
+            "icode": "6",
+            "valE": "0x2",
+            "valM": "0x0",
+            "dstE": "%rsi",
+            "dstM": "null"
+        }
+    },
+    "25": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x83"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "addq",
+            "icode ": "6",
+            "ifun ": "0",
+            "rA = ": "%r10",
+            "rB = ": "%rax",
+            "valC": "0x0",
+            "valP": "0x83"
+        },
+        "E": {
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "IMRMOVQ",
+            "icode": "5",
+            "valA": "0x0",
+            "valE": "0x28",
+            "dstE": "null",
+            "dstM": "%r10",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "jne",
+            "icode": "7",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "26": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x85"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "addq",
+            "icode ": "6",
+            "ifun ": "0",
+            "rA = ": "%r8",
+            "rB = ": "%rdi",
+            "valC": "0x0",
+            "valP": "0x85"
+        },
+        "E": {
+            "instr ": "addq",
+            "icode ": "6",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0xb000b000b00",
+            "valB": "0xcd00cd00cd",
+            "dstE": "%rax",
+            "dstM": "null",
+            "srcA": "%r10",
+            "srcB": "%rax"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valA": "0x0",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "IMRMOVQ",
+            "icode": "5",
+            "valE": "0x28",
+            "valM": "0xb000b000b00",
+            "dstE": "null",
+            "dstM": "%r10"
+        }
+    },
+    "27": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x87"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "subq",
+            "icode ": "6",
+            "ifun ": "1",
+            "rA = ": "%r9",
+            "rB = ": "%rsi",
+            "valC": "0x0",
+            "valP": "0x87"
+        },
+        "E": {
+            "instr ": "addq",
+            "icode ": "6",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x8",
+            "valB": "0x28",
+            "dstE": "%rdi",
+            "dstM": "null",
+            "srcA": "%r8",
+            "srcB": "%rdi"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "addq",
+            "icode": "6",
+            "valA": "0xb000b000b00",
+            "valE": "0xbcd0bcd0bcd",
+            "dstE": "%rax",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "28": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x77"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "jne",
+            "icode ": "7",
+            "ifun ": "4",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x77",
+            "valP": "0x90"
+        },
+        "E": {
+            "instr ": "subq",
+            "icode ": "6",
+            "ifunc ": "1",
+            "valC": "0x0",
+            "valA": "0x1",
+            "valB": "0x2",
+            "dstE": "%rsi",
+            "dstM": "null",
+            "srcA": "%r9",
+            "srcB": "%rsi"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "addq",
+            "icode": "6",
+            "valA": "0x8",
+            "valE": "0x30",
+            "dstE": "%rdi",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "addq",
+            "icode": "6",
+            "valE": "0xbcd0bcd0bcd",
+            "valM": "0x0",
+            "dstE": "%rax",
+            "dstM": "null"
+        }
+    },
+    "29": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x81"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "IMRMOVQ",
+            "icode ": "5",
+            "ifun ": "0",
+            "rA = ": "%r10",
+            "rB = ": "%rdi",
+            "valC": "0x0",
+            "valP": "0x81"
+        },
+        "E": {
+            "instr ": "jne",
+            "icode ": "7",
+            "ifunc ": "4",
+            "valC": "0x77",
+            "valA": "0x90",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "subq",
+            "icode": "6",
+            "valA": "0x1",
+            "valE": "0x1",
+            "dstE": "%rsi",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "addq",
+            "icode": "6",
+            "valE": "0x30",
+            "valM": "0x0",
+            "dstE": "%rdi",
+            "dstM": "null"
+        }
+    },
+    "30": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x83"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "addq",
+            "icode ": "6",
+            "ifun ": "0",
+            "rA = ": "%r10",
+            "rB = ": "%rax",
+            "valC": "0x0",
+            "valP": "0x83"
+        },
+        "E": {
+            "instr ": "IMRMOVQ",
+            "icode ": "5",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x30",
+            "dstE": "null",
+            "dstM": "%r10",
+            "srcA": "null",
+            "srcB": "%rdi"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "jne",
+            "icode": "7",
+            "valA": "0x90",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "subq",
+            "icode": "6",
+            "valE": "0x1",
+            "valM": "0x0",
+            "dstE": "%rsi",
+            "dstM": "null"
+        }
+    },
+    "31": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x83"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "addq",
+            "icode ": "6",
+            "ifun ": "0",
+            "rA = ": "%r10",
+            "rB = ": "%rax",
+            "valC": "0x0",
+            "valP": "0x83"
+        },
+        "E": {
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "IMRMOVQ",
+            "icode": "5",
+            "valA": "0x0",
+            "valE": "0x30",
+            "dstE": "null",
+            "dstM": "%r10",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "jne",
+            "icode": "7",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "32": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x85"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "addq",
+            "icode ": "6",
+            "ifun ": "0",
+            "rA = ": "%r8",
+            "rB = ": "%rdi",
+            "valC": "0x0",
+            "valP": "0x85"
+        },
+        "E": {
+            "instr ": "addq",
+            "icode ": "6",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0xa000a000a000",
+            "valB": "0xbcd0bcd0bcd",
+            "dstE": "%rax",
+            "dstM": "null",
+            "srcA": "%r10",
+            "srcB": "%rax"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valA": "0x0",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "IMRMOVQ",
+            "icode": "5",
+            "valE": "0x30",
+            "valM": "0xa000a000a000",
+            "dstE": "null",
+            "dstM": "%r10"
+        }
+    },
+    "33": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x87"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "subq",
+            "icode ": "6",
+            "ifun ": "1",
+            "rA = ": "%r9",
+            "rB = ": "%rsi",
+            "valC": "0x0",
+            "valP": "0x87"
+        },
+        "E": {
+            "instr ": "addq",
+            "icode ": "6",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x8",
+            "valB": "0x30",
+            "dstE": "%rdi",
+            "dstM": "null",
+            "srcA": "%r8",
+            "srcB": "%rdi"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "addq",
+            "icode": "6",
+            "valA": "0xa000a000a000",
+            "valE": "0xabcdabcdabcd",
+            "dstE": "%rax",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "34": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x77"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "jne",
+            "icode ": "7",
+            "ifun ": "4",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x77",
+            "valP": "0x90"
+        },
+        "E": {
+            "instr ": "subq",
+            "icode ": "6",
+            "ifunc ": "1",
+            "valC": "0x0",
+            "valA": "0x1",
+            "valB": "0x1",
+            "dstE": "%rsi",
+            "dstM": "null",
+            "srcA": "%r9",
+            "srcB": "%rsi"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "addq",
+            "icode": "6",
+            "valA": "0x8",
+            "valE": "0x38",
+            "dstE": "%rdi",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "addq",
+            "icode": "6",
+            "valE": "0xabcdabcdabcd",
+            "valM": "0x0",
+            "dstE": "%rax",
+            "dstM": "null"
+        }
+    },
+    "35": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x81"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "IMRMOVQ",
+            "icode ": "5",
+            "ifun ": "0",
+            "rA = ": "%r10",
+            "rB = ": "%rdi",
+            "valC": "0x0",
+            "valP": "0x81"
+        },
+        "E": {
+            "instr ": "jne",
+            "icode ": "7",
+            "ifunc ": "4",
+            "valC": "0x77",
+            "valA": "0x90",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "subq",
+            "icode": "6",
+            "valA": "0x1",
+            "valE": "0x0",
+            "dstE": "%rsi",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "addq",
+            "icode": "6",
+            "valE": "0x38",
+            "valM": "0x0",
+            "dstE": "%rdi",
+            "dstM": "null"
+        }
+    },
+    "36": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x83"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x0",
+            "valP": "0x0"
+        },
+        "E": {
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "jne",
+            "icode": "7",
+            "valA": "0x90",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "0"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "subq",
+            "icode": "6",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "%rsi",
+            "dstM": "null"
+        }
+    },
+    "37": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x91"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "IRET",
+            "icode ": "9",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x0",
+            "valP": "0x91"
+        },
+        "E": {
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valA": "0x0",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "jne",
+            "icode": "7",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "38": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x91"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x0",
+            "valP": "0x0"
+        },
+        "E": {
+            "instr ": "IRET",
+            "icode ": "9",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x1f0",
+            "valB": "0x1f0",
+            "dstE": "%rsp",
+            "dstM": "null",
+            "srcA": "%rsp",
+            "srcB": "%rsp"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valA": "0x0",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "39": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x91"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x0",
+            "valP": "0x0"
+        },
+        "E": {
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "IRET",
+            "icode": "9",
+            "valA": "0x1f0",
+            "valE": "0x1f8",
+            "dstE": "%rsp",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "40": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x91"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x0",
+            "valP": "0x0"
+        },
+        "E": {
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valA": "0x0",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "IRET",
+            "icode": "9",
+            "valE": "0x1f8",
+            "valM": "0x55",
+            "dstE": "%rsp",
+            "dstM": "null"
+        }
+    },
+    "41": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x56"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "IRET",
+            "icode ": "9",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x0",
+            "valP": "0x56"
+        },
+        "E": {
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valA": "0x0",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "42": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x56"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x0",
+            "valP": "0x0"
+        },
+        "E": {
+            "instr ": "IRET",
+            "icode ": "9",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x1f8",
+            "valB": "0x1f8",
+            "dstE": "%rsp",
+            "dstM": "null",
+            "srcA": "%rsp",
+            "srcB": "%rsp"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valA": "0x0",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "43": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x56"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x0",
+            "valP": "0x0"
+        },
+        "E": {
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "IRET",
+            "icode": "9",
+            "valA": "0x1f8",
+            "valE": "0x200",
+            "dstE": "%rsp",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "44": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x56"
+        },
+        "D": {
+            "stat ": "AOK",
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x0",
+            "valP": "0x0"
+        },
+        "E": {
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valA": "0x0",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "IRET",
+            "icode": "9",
+            "valE": "0x200",
+            "valM": "0x13",
+            "dstE": "%rsp",
+            "dstM": "null"
+        }
+    },
+    "45": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x14"
+        },
+        "D": {
+            "stat ": "HLT",
+            "instr ": "HALT",
+            "icode ": "0",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x0",
+            "valP": "0x14"
+        },
+        "E": {
+            "instr ": "NOP",
+            "icode ": "1",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valA": "0x0",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "46": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x15"
+        },
+        "D": {
+            "stat ": "HLT",
+            "instr ": "HALT",
+            "icode ": "0",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x0",
+            "valP": "0x15"
+        },
+        "E": {
+            "instr ": "HALT",
+            "icode ": "0",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valA": "0x0",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "47": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x16"
+        },
+        "D": {
+            "stat ": "HLT",
+            "instr ": "HALT",
+            "icode ": "0",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x0",
+            "valP": "0x16"
+        },
+        "E": {
+            "instr ": "HALT",
+            "icode ": "0",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "HLT",
+            "instr": "HALT",
+            "icode": "0",
+            "valA": "0x0",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "1"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    },
+    "48": {
+        "ss": {
+            "stat": "HLT"
+        },
+        "cc": {
+            "ZF": true,
+            "SF": false,
+            "OF": false
+        },
+        "F": {
+            "FrePC": "0x17"
+        },
+        "D": {
+            "stat ": "HLT",
+            "instr ": "HALT",
+            "icode ": "0",
+            "ifun ": "0",
+            "rA = ": "null",
+            "rB = ": "null",
+            "valC": "0x0",
+            "valP": "0x17"
+        },
+        "E": {
+            "instr ": "HALT",
+            "icode ": "0",
+            "ifunc ": "0",
+            "valC": "0x0",
+            "valA": "0x0",
+            "valB": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "srcA": "null",
+            "srcB": "null"
+        },
+        "M": {
+            "stat": "HLT",
+            "instr": "NOP",
+            "icode": "1",
+            "valA": "0x0",
+            "valE": "0x0",
+            "dstE": "null",
+            "dstM": "null",
+            "Cnd": "0"
+        },
+        "W": {
+            "stat": "AOK",
+            "instr": "NOP",
+            "icode": "1",
+            "valE": "0x0",
+            "valM": "0x0",
+            "dstE": "null",
+            "dstM": "null"
+        }
+    }
+}
